@@ -7,7 +7,30 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/sendmail', (req, res) => {
-  // Your nodemailer configuration and email sending logic will go here
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+          user: 'your-email@gmail.com', // Your email
+          pass: 'your-password' // Your email password
+        }
+      });
+      
+      const mailOptions = {
+        from: req.body.email, // sender address
+        to: 'your-email@gmail.com', // list of receivers
+        subject: `New message from ${req.body.name}`, // Subject line
+        text: req.body.message // plain text body
+      };
+      
+      transporter.sendMail(mailOptions, function (err, info) {
+        if (err) {
+          console.error(err);
+          res.status(500).send('Error sending email');
+        } else {
+          res.status(200).send('Email successfully sent');
+        }
+      });
+      
 });
 
 const PORT = process.env.PORT || 3000;
