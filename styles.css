@@ -58,7 +58,11 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url('/assets/sphere2.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/sphere3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
