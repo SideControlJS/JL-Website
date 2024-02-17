@@ -1,12 +1,15 @@
-// Example JavaScript to dynamically showcase skills
-document.addEventListener('DOMContentLoaded', function() {
-    var skills = ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'React', 'Node.js'];
-    var skillsList = document.getElementById('skills-list');
+document.addEventListener('DOMContentLoaded', function () {
+    const contactForm = document.getElementById('contact-form');
+    
+    contactForm.addEventListener('submit', function (event) {
+      if (!contactForm.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      
+      contactForm.classList.add('was-validated');
+    }, false);
+  });
+  
 
-    skills.forEach(function(skill) {
-        var skillItem = document.createElement('div');
-        skillItem.className = 'skill';
-        skillItem.textContent = skill;
-        skillsList.appendChild(skillItem);
-    });
-});
+
