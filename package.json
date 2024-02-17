@@ -1,0 +1,23 @@
+{
+  "name": "jl-website",
+  "version": "1.0.0",
+  "description": "jesse's web dev website",
+  "main": "server.js",
+  "scripts": {
+    "test": "run test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SideControlJS/JL-Website.git"
+  },
+  "keywords": [
+    "freelance"
+  ],
+  "author": "Jesse Lare",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SideControlJS/JL-Website/issues"
+  },
+  "homepage": "https://github.com/SideControlJS/JL-Website#readme"
+}
