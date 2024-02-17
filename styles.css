@@ -100,6 +100,22 @@ body {
     background-color: #cc8400; /* Darker orange */
 }
 
+.social-icons {
+    text-align: center; /* Center the icons if they are alone in a div */
+    margin-top: 1rem; /* Spacing from the text above */
+  }
+  
+  .social-icon {
+    margin: 0 10px; /* Spacing between icons */
+    color: #fff; /* White color for the icons */
+    transition: color 0.3s ease; /* Smooth color transition for hover effect */
+  }
+  
+  .social-icon:hover {
+    color: #0d6efd; /* Change color on hover, use a color that matches your design */
+  }
+  
+
 /* Main Content */
 .container {
     max-width: 1200px;
