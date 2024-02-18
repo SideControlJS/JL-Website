@@ -6,6 +6,9 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use('/assets', express.static('/assets'));
+
+
 app.post('/sendmail', (req, res) => {
     const transporter = nodemailer.createTransport({
         service: 'gmail',
