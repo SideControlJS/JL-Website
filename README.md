@@ -3,9 +3,9 @@
 This repo is for my freelance web development landing/marketing page. This website serves as the primary online marketing platform to showcase my web development services, engage with potential clients, and collect service inquiries through a contact form.
 
 ### Deployed Page Screenshot
-![screenshot](/assets/screeny.png)
-![screenshot2](/assets/screeny2.png)
-![screenshot3](/assets/screeny3.png)
+![screenshot](/assets/images/screeny.png)
+![screenshot2](/assets/images/screeny2.png)
+![screenshot3](/assets/images/screeny3.png)
 
 ### Deployed Link
 
