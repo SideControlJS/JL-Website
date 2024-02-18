@@ -4,6 +4,11 @@ this repo is for my freelance web development landing/marketing page. This websi
 
 ### Deployed Page Screenshot
 ![screenshot](/assets/screeny.png)
+![screenshot2](/assets/screeny2.png)
+![screenshot3](/assets/screeny3.png)
+
+### Deployed Link
+
 
 ## Features
 
