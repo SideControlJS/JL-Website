@@ -62,7 +62,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('assets/sphere3.png');
+    background-image: url('/sphere3.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
