@@ -81,24 +81,22 @@ body {
 }
 
 .hero p {
+    color: #ffa500;
+    font-weight: bold;
     font-size: 1rem;
     margin-bottom: 1.5rem;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero button {
-    padding: 0.75rem 1.5rem;
-    border-radius: 20px;
-    background-color: #FFA500; /* Orange background */
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
-}
 
-.hero button:hover {
-    background-color: #cc8400; /* Darker orange */
-}
+.text-primary {
+    color: #FFA500 !important; /* Orange color to match your accent */
+    font-size: 3rem; /* Larger font size for prominence */
+    font-weight: bold; /* Make the text bold */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+    margin-bottom: 0.5rem; /* Spacing below the heading */
+  }
+  
 
 .social-icons {
     text-align: center; /* Center the icons if they are alone in a div */
@@ -107,7 +105,7 @@ body {
   
   .social-icon {
     margin: 0 10px; /* Spacing between icons */
-    color: #fff; /* White color for the icons */
+    color: whitesmoke; /* White color for the icons */
     transition: color 0.3s ease; /* Smooth color transition for hover effect */
   }
   
@@ -182,6 +180,52 @@ body {
   
   .was-validated .invalid-feedback {
     display: block;
+  }
+
+
+/* Buttons */
+.btn-primary {
+    background-color: #ffa500; /* Replace with your exact orange color code */
+    border-color: #ffa500; /* Same here */
+  }
+  
+  /* On hover, slightly change the shade if desired */
+  .btn-primary:hover {
+    background-color: #e69500; /* Darker shade of orange for hover effect */
+    border-color: #e69500; /* Same for border */
+  }
+  
+  /* Icons in the Services Section */
+  .service-icon {
+    color: #ffa500; /* Your orange color */
+  }
+  
+  
+  /* Borders or Underlines for Section Titles */
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #ffa500;
+    margin: 8px auto; /* This centers the line if the title is centered */
+  }
+  
+  /* Footer Links */
+  footer a:hover {
+    color: #ffa500 !important; /* Orange color for hover state */
+  }
+  
+  /* Custom Bullet Points */
+  ul.custom-bullets li::before {
+    content: '• '; /* Custom bullet */
+    color: #ffa500; /* Orange bullets */
+    font-size: 1.2em; /* Adjust size as needed */
+  }
+  
+  /* Social Media Icons in the Footer */
+  .social-icon:hover {
+    color: #ffa500; /* Orange hover effect for social icons */
   }
   
 
