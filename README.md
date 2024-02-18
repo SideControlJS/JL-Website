@@ -8,7 +8,7 @@ This repo is for my freelance web development landing/marketing page. This websi
 ![screenshot3](/assets/images/screeny3.png)
 
 ### Deployed Link
-
+https://sidecontroljs.github.io/JL-Website/
 
 ## Features
 
