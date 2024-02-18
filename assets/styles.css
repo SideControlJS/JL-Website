@@ -195,9 +195,18 @@ body {
   }
   
   /* Icons in the Services Section */
-  .service-icon {
-    color: #ffa500; /* Your orange color */
+i {
+    font-size: 3rem; /* Adjust the size as needed */
+    margin-bottom: 1rem; /* Space below the icons */
+    color: #ffa500; /* Orange color for the icons */
   }
+  
+  /* Section Titles */
+  .section-title {
+    font-size: 2.5rem; /* Larger font size for prominence */
+    margin-bottom: 1.5rem; /* Space below the title */
+    text-align: center; /* Center the title */
+}
   
   
   /* Borders or Underlines for Section Titles */
