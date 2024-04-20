@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:wght@300&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Source+Sans+3:wght@400;600&display=swap');
 
 /* Reset default browser styles */
 * {
@@ -57,21 +57,46 @@ body {
 
 /* Hero Section */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-image: url('../assets/images/sphere3.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center;
-    padding: 4rem 0;
-    color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+  position: relative; /* Establishes a positioning context for z-index */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 4rem 0;
 }
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Lower z-index since it's the background element */
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Start fully transparent */
+  animation: dimOverlay 30s forwards;
+  z-index: 2; /* Above the video but below the text */
+}
+
+.overlay-content { /* This class is for the content that needs to be on top of the overlay */
+  position: relative;
+  z-index: 3; /* Highest z-index to keep text and links clickable and visible */
+}
+
+@keyframes dimOverlay {
+  to { background: rgba(0, 0, 0, 0.7); }
+}
+
+
 
 .hero h1 {
     font-size: 2.5rem;
