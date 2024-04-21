@@ -1,11 +1,15 @@
 require('dotenv').config();
 const express = require('express');
+const cors = require('cors');
 const nodemailer = require('nodemailer');
 
 const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 app.use('/assets', express.static('/assets'));
+app.use(cors({
+  origin: 'https://wdxjesselare.netlify.app/' // frontend url
+}));
 
 app.post('/sendmail', (req, res) => {
   if (!req.body.name || !req.body.email || !req.body.message) {
