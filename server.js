@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 const app = express();
 
@@ -9,7 +10,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors({
-  origin: 'https://wdxjesselare.netlify.app/' // Your frontend URL
+  origin: 'https://jl-website-0eb44775d8a0.herokuapp.com/' // Your frontend URL
 }));
 
 // Root route
