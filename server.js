@@ -5,12 +5,19 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
+// Middlewares
 app.use(express.urlencoded({ extended: true }));
-app.use('/assets', express.static('/assets'));
+app.use(express.static('assets'));
 app.use(cors({
-  origin: 'https://wdxjesselare.netlify.app/' // frontend url
+  origin: 'https://wdxjesselare.netlify.app/' // Your frontend URL
 }));
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Hello! The server is up and running.'); // Simple message to show that your server is working
+});
+
+// Sendmail route
 app.post('/sendmail', (req, res) => {
   if (!req.body.name || !req.body.email || !req.body.message) {
     return res.status(400).send('Missing required fields');
@@ -46,8 +53,8 @@ app.post('/sendmail', (req, res) => {
   });
 });
 
+// Start server
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
-
