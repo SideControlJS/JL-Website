@@ -57,13 +57,15 @@ body {
 
 /* Hero Section */
 .hero {
-  position: relative; /* Establishes a positioning context for z-index */
+  background-image: url('../assets/images/pexels-tyler-hendy-9620-53265.jpg');
+  height: 100vh; /* Adjust height as necessary */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  text-align: center;
-  padding: 4rem 0;
+  justify-content: center;
 }
 
 .hero-video {
@@ -80,16 +82,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0); /* Start fully transparent */
-  animation: dimOverlay 30s forwards;
-  z-index: 2; /* Above the video but below the text */
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
 }
 
-.overlay-content { /* This class is for the content that needs to be on top of the overlay */
-  position: relative;
-  z-index: 3; /* Highest z-index to keep text and links clickable and visible */
+.overlay-content {
+  z-index: 2;
+  color: white; /* Ensures text is visible on darker images */
 }
 
 @keyframes dimOverlay {
