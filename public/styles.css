@@ -60,6 +60,10 @@ body.dark-mode {
     color: #FFA500; /* Orange color on hover/focus/active */
 }
 
+.dark-mode nav {
+    background-color: #1a1a1a; /* Darker background color */
+}
+
 /* Hero Section */
 .hero {
   background-image: url('./assets/images/pexels-tyler-hendy-9620-53265.jpg');
@@ -124,7 +128,7 @@ body.dark-mode {
 .social-icon:hover {
     color: #0f0f0f; /* Change color on hover, use a color that matches your design */
   }
-  
+
 
 /* Main Content */
 .container {
