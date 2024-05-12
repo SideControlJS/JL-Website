@@ -57,7 +57,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image: url('../assets/images/pexels-tyler-hendy-9620-53265.jpg');
+  background-image: url('./assets/images/pexels-tyler-hendy-9620-53265.jpg');
   height: 100vh; /* Adjust height as necessary */
   background-position: center;
   background-repeat: no-repeat;
