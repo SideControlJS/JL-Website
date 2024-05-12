@@ -64,6 +64,58 @@ body.dark-mode {
     background-color: #1a1a1a; /* Darker background color */
 }
 
+.dark-mode-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ffa500;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
 /* Hero Section */
 .hero {
   background-image: url('./assets/images/pexels-tyler-hendy-9620-53265.jpg');
@@ -75,6 +127,11 @@ body.dark-mode {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: filter 0.5s ease;
+}
+
+.dark-mode .hero {
+  filter: brightness(50%);
 }
 
 
@@ -83,6 +140,11 @@ body.dark-mode {
   color: white; /* Ensures text is visible on darker images */
   
 }
+
+.dark-mode-toggle-wrapper span {
+  color: #333;  /* Assuming #333 is the dark gray color used elsewhere */
+}
+
 
 @keyframes dimOverlay {
   to { background: rgba(0, 0, 0, 0.7); }
@@ -329,4 +391,11 @@ footer {
       margin-top: 0;
     }
   }
+
+  @media (max-width: 768px) {
+    .dark-mode-toggle-wrapper {
+        margin-bottom: 10px;  /* Adds spacing below the toggle on smaller screens */
+    }
+}
+
   
