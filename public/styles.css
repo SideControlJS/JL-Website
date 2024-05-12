@@ -109,13 +109,13 @@ body {
     margin-top: 2rem; /* Spacing from the text above */
   }
   
-  .social-icon {
+.social-icon {
     margin: 0 10px; /* Spacing between icons */
     color: whitesmoke; /* White color for the icons */
     transition: color 0.3s ease; /* Smooth color transition for hover effect */
   }
   
-  .social-icon:hover {
+.social-icon:hover {
     color: #0f0f0f; /* Change color on hover, use a color that matches your design */
   }
   
